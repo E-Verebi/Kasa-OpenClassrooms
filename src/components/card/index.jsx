@@ -2,6 +2,8 @@ import "./index.css"
 import { Link } from "react-router-dom"
 
 const Card = ({ title, picture, id }) => {
+  const searchParams = new URLSearchParams()
+  searchParams.set("id", { id })
   return (
     <Link
       to={`/accomodations/${id}`}

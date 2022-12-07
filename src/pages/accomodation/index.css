@@ -1,0 +1,15 @@
+.accCardsContainer {
+  width: 85%;
+  margin: auto;
+  display: flex;
+
+  justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .accCardsContainer {
+    width: 90%;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
