@@ -1,0 +1,25 @@
+.tag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 115px;
+  height: 25px;
+  border-radius: 10px;
+  background-color: #ff6060;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: #ffffff;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+@media (max-width: 768px) {
+  .tag {
+    min-width: 84px;
+    height: 18px;
+    font-size: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}

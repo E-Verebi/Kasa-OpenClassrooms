@@ -31,5 +31,3 @@ const Dropdown = (props) => {
 }
 
 export default Dropdown
-
-/*transform: scaleX(-1)*/

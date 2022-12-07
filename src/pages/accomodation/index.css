@@ -6,10 +6,139 @@
   justify-content: space-between;
 }
 
+.mainContainer {
+  width: 85%;
+
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  margin-bottom: 24px;
+}
+.mainContainer p {
+  margin: 0;
+  width: fit-content;
+}
+.mainContainer__subCon1 {
+  width: fit-content;
+}
+
+.mainContainer__subCon1__title {
+  margin-bottom: 20px;
+}
+
+.mainContainer__subCon1__title__accomodation {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  color: #ff6060;
+}
+
+.mainContainer__subCon1__title__location {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  color: #ff6060;
+}
+
+.mainContainer__subCon1__tagsContainer {
+  width: fit-content;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.mainContainer__subCon2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.mainContainer__subCon2__host {
+  width: fit-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.mainContainer__subCon2__host__name {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  color: #ff6060;
+  text-align: right;
+}
+
+.mainContainer__subCon2__host__pic {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+
+.mainContainer__subCon2__starsContainer {
+  margin-top: 24px;
+  height: 30px;
+  width: fit-content;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
 @media (max-width: 768px) {
   .accCardsContainer {
     width: 90%;
     flex-direction: column;
     gap: 20px;
+  }
+
+  .mainContainer {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 16px;
+  }
+
+  .mainContainer__subCon1 {
+    width: 100%;
+  }
+
+  .mainContainer__subCon1__title {
+    margin-bottom: 10px;
+  }
+
+  .mainContainer__subCon1__title__accomodation {
+    font-size: 18px;
+  }
+  .mainContainer__subCon1__title__location {
+    font-size: 14px;
+    padding-top: 5px;
+  }
+  .mainContainer__subCon2 {
+    width: 100%;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .mainContainer__subCon2__host__name {
+    font-size: 12px;
+  }
+  .mainContainer__subCon2__host__pic {
+    width: 32px;
+    height: 32px;
+  }
+  .mainContainer__subCon2__starsContainer {
+    margin: 0;
+    height: 15px;
+    gap: 5px;
+  }
+  .star {
+    height: 15px;
+    width: auto;
+  }
+  .mainContainer__subCon1__tagsContainer {
+    flex-wrap: wrap;
+    justify-content: flex-start;
   }
 }
