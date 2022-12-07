@@ -1,0 +1,33 @@
+.footer {
+  height: 209px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background: #000000;
+}
+
+.footer__logo {
+  margin-top: 66px;
+}
+
+.footer__text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 29px;
+  margin-top: 0;
+}
+
+@media (max-width: 768px) {
+  .footer__logo {
+    margin-top: 62px;
+  }
+  .footer__text {
+    font-size: 12px;
+    padding-top: 20px;
+    margin-bottom: 62px;
+  }
+}

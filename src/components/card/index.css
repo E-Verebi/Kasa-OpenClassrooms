@@ -1,0 +1,33 @@
+.card {
+  display: flex;
+  justify-content: left;
+  align-items: flex-end;
+  min-width: 340px;
+  max-width: 340px;
+  height: 340px;
+  border-radius: 10px;
+  background-position: 50% 50%;
+  background-size: cover;
+  text-decoration: none;
+}
+
+.card__text {
+  max-width: 300px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.card:hover {
+  text-decoration: underline white;
+}
+
+@media (max-width: 768px) {
+  .card {
+    max-width: 100%;
+    min-width: 100%;
+  }
+}
