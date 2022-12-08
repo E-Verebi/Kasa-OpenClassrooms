@@ -1,5 +1,7 @@
 import "./index.css"
 import { Link } from "react-router-dom"
+import PropTypes from "prop-types"
+import defaultpicture from "../../assets/comingsoon.jpg"
 
 const Card = ({ title, picture, id }) => {
   const searchParams = new URLSearchParams()
@@ -19,6 +21,16 @@ const Card = ({ title, picture, id }) => {
       <p className="card__text">{title}</p>
     </Link>
   )
+}
+
+Card.propTypes = {
+  title: PropTypes.string.isRequired,
+  picture: PropTypes.string.isRequired,
+}
+
+Card.defaultProps = {
+  title: "Location",
+  picture: `${defaultpicture}`,
 }
 
 export default Card

@@ -1,0 +1,74 @@
+.defaultPic {
+  position: relative;
+  width: 50px;
+  margin: auto;
+}
+
+.gallery {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin: auto;
+  width: 85%;
+  height: 415px;
+  border-radius: 25px;
+  background-position: 50% 50%;
+  background-size: cover;
+  margin-bottom: 24px;
+}
+
+.gallery__count {
+  position: absolute;
+  left: 48.95%;
+  right: 49.11%;
+  top: 86.19%;
+  bottom: 6.01%;
+  height: fit-content;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 142.6%;
+  color: #ffffff;
+}
+
+.gallery__prev {
+  margin-left: 23px;
+  width: 47px;
+  height: fit-content;
+}
+
+.gallery__next {
+  margin-right: 23px;
+  width: 47px;
+  height: fit-content;
+  transform: rotate(-180deg);
+}
+
+.gallery > img:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .gallery {
+    width: 90%;
+    height: 225px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+
+  .gallery__prev {
+    margin-left: 6px;
+    width: 12px;
+  }
+
+  .gallery__next {
+    margin-right: 6px;
+    width: 12px;
+    transform: rotate(-180deg);
+  }
+
+  .gallery__count {
+    display: none;
+  }
+}
