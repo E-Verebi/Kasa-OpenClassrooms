@@ -1,10 +1,11 @@
 import "./index.css"
 import Dropdown from "../../components/dropdown"
+import Banner from "../../components/banner"
 
 const About = () => {
   return (
     <div>
-      <div className="introAbout"></div>
+      <Banner page={window.location.pathname} />
       <div className="dropdownsContainer">
         <Dropdown title="Fiabilité">
           Les annonces postées sur Kasa garantissent une fiabilité totale. Les

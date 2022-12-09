@@ -8,8 +8,9 @@ const Dropdown = (props) => {
   const [isOpened, setIsOpened] = useState(false)
   return (
     <div
-      id={currentURL.includes("about") ? null : "accomodation"}
-      className="dropdown"
+      className={
+        currentURL.includes("about") ? "dropdown" : "accomodation dropdown"
+      }
     >
       <div className="dropdown__header">
         <p className="dropdown__header__title">{props.title}</p>
