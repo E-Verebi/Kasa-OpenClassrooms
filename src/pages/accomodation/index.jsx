@@ -9,7 +9,6 @@ import Gallery from "../../components/gallery"
 
 const Accomodation = () => {
   const accomodationId = useParams().id
-  console.log(accomodationId)
   const selectedAccomodation = accomodationsList.find(
     (acc) => acc.id === accomodationId
   )

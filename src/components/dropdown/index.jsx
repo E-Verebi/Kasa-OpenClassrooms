@@ -4,7 +4,6 @@ import vector from "../../assets/vector.svg"
 
 const Dropdown = (props) => {
   const currentURL = window.location.href
-  console.log(currentURL)
   const [isOpened, setIsOpened] = useState(false)
   return (
     <div

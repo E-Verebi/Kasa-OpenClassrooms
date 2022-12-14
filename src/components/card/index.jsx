@@ -4,8 +4,6 @@ import PropTypes from "prop-types"
 import defaultpicture from "../../assets/comingsoon.jpg"
 
 const Card = ({ title, picture, id }) => {
-  /*const searchParams = new URLSearchParams()
-  searchParams.set("id", { id })*/
   return (
     <Link
       to={`/accomodations/${id}`}

@@ -4,7 +4,6 @@ import galleryvector from "../../assets/galleryvector.svg"
 import defaultpicture from "../../assets/comingsoon.jpg"
 
 const Gallery = ({ images }) => {
-  console.log(images)
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
   const previousImage = () => {
     const newIndex = currentImageIndex - 1
