@@ -7,10 +7,19 @@ const Header = () => {
     <header className="header">
       <img src={logo} alt="logo Kasa" className="header__logo" />
       <nav className="header__nav">
-        <NavLink to="/" className="header__nav__navlink">
+        <NavLink
+          exact
+          to="/"
+          activeClassName="active"
+          className="header__nav__navlink"
+        >
           Accueil
         </NavLink>
-        <NavLink to="/about" className="header__nav__navlink">
+        <NavLink
+          to="/about"
+          activeClassName="active"
+          className="header__nav__navlink"
+        >
           À Propos
         </NavLink>
       </nav>

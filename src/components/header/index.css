@@ -28,6 +28,10 @@
   text-decoration: underline;
 }
 
+.active {
+  text-decoration: underline;
+}
+
 @media (max-width: 768px) {
   .header {
     width: 90%;
