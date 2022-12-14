@@ -2,6 +2,7 @@ import "./index.css"
 import { Link } from "react-router-dom"
 
 const Error = () => {
+  //Le Link présent dans ce composant permet de ramener l'utilisateur vers '/' qui correspond à la page d'accueil.
   return (
     <div className="error">
       <p className="error__404">404</p>

@@ -11,20 +11,24 @@ const Home = () => {
         page={window.location.pathname}
       />
       <div className="cardsContainer">
-        {accomodationsList.length === 0 ? (
-          <p className="cardsContainer__warning">
-            Plus de logements disponibles ! 😕
-          </p>
-        ) : (
-          accomodationsList.map((accomodation, index) => (
-            <Card
-              key={`${accomodation.host.name}-${index}`}
-              title={accomodation.title}
-              id={accomodation.id}
-              picture={accomodation.pictures[0]}
-            />
-          ))
-        )}
+        {
+          //Si rien ne se trouve dans la liste de logements (donc que accomodationsList.length === 0), alors le message "Plus de logements disponibles ! 😕" s'affichera dans cardsContainer
+          accomodationsList.length === 0 ? (
+            <p className="cardsContainer__warning">
+              Plus de logements disponibles ! 😕
+            </p>
+          ) : (
+            //Un mapping est effectué pour chaque élément du tableau accomodationsList, en d'autres termes, pour chaque logement. Les propriétés suivantes sont passées à Card: id (un mélange du nom de l'hôte et de l'index du logement), title, key, et picture (qui correspond à la première image de pictures)
+            accomodationsList.map((accomodation, index) => (
+              <Card
+                key={`${accomodation.host.name}-${index}`}
+                title={accomodation.title}
+                id={accomodation.id}
+                picture={accomodation.pictures[0]}
+              />
+            ))
+          )
+        }
       </div>
     </div>
   )
